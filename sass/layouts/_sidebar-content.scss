@@ -1,0 +1,29 @@
+.site-header {
+	grid-area: header;
+}
+
+.products {
+}
+
+.site-main {
+	grid-area: main;
+	overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+
+	@include respond-to("medium") {
+		padding: 10px 20px;
+	}
+
+	@include respond-to("small") {
+		padding: 10px 20px;
+	}
+}
+
+.widget-area {
+	grid-area: sidebar;
+}
+
+.site-footer {
+	grid-area: footer;
+}
+
+@import "no-sidebar";

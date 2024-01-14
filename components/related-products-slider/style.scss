@@ -1,0 +1,74 @@
+@import "../../sass/responsive.scss";
+
+.related-products__container {
+	.prodcut__tech-item {
+		width: 24px;
+		height: 21px;
+
+		p {
+			font-size: 12px;
+		}
+	}
+}
+
+.related-products__container__title {
+	font-size: 32px;
+	font-weight: 600;
+	margin: 96px 0 24px;
+	text-align: center;
+}
+
+// ----------------- \\
+
+.related-products-slider {
+	position: relative;
+	margin: 0 70px;
+	z-index: 50;
+
+	@include respond-to("small") {
+		margin: 0 40px;
+
+		.product__thumbnail-tech-container {
+			width: auto;
+		}
+	}
+
+	.btn-next-company {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: -25px;
+		width: fit-content;
+		border: none;
+		background-color: transparent;
+		cursor: pointer;
+		z-index: 50;
+	}
+	.btn-prev-company {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: -25px;
+		width: fit-content;
+		border: none;
+		background-color: transparent;
+		cursor: pointer;
+		z-index: 50;
+	}
+}
+
+.products-container {
+	.related-products-slider {
+		position: relative;
+		margin: 80px 0;
+		z-index: 50;
+	}
+}
+
+.swiper-category-companies {
+	display: none;
+}
+
+.active__slider {
+	display: block;
+}

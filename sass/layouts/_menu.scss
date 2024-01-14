@@ -1,0 +1,23 @@
+.menu {
+    color: $color__black;
+    a {
+        color: $color__black;
+    }
+    ul {
+    }
+}
+
+.menu-footer-1-class ul {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.menu-footer-1-class a {
+    color: #d2d4da;
+    transition: all 0.3s;
+    &:hover {
+        text-decoration: underline;
+    }
+}

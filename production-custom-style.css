@@ -1,0 +1,34 @@
+@media (max-width: 590px) {
+
+    .custom-badge {
+        display: block !important;
+        position: absolute;
+        top: 11% !important;
+        right: 132px !important;
+    }
+    .custom-badge img {
+        width: 44px !important;
+        height: auto !important;
+    }
+
+    .summary.entry-summary .custom-badge {
+        top: 10% !important;
+        right: 256px !important;
+    }
+
+    .summary.entry-summary .custom-badge img {
+        width: 55px !important;
+        height: auto !important;
+    }
+    .wp-block-image img {
+        height: auto;
+        width: 100%;
+    }
+    .ya-floating-discount {
+        width: 100%;
+    }
+}
+
+.btn.btn-header {
+    color: black;
+}

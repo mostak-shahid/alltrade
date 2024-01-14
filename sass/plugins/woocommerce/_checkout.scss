@@ -1,0 +1,125 @@
+@media screen and (min-width: 768px) {
+    .col2-set {
+        .form-row-first {
+            float: left;
+        }
+
+        .form-row-last {
+            float: right;
+            margin-right: 0;
+        }
+
+        .form-row-first,
+        .form-row-last {
+        }
+    }
+}
+
+#billing_country_field {
+    label {
+        margin-bottom: 8px;
+    }
+    margin-bottom: 16px;
+}
+
+.checkout.woocommerce-checkout {
+    display: grid;
+    grid-template-columns: 1fr 0.7fr;
+    gap: 20px;
+    grid-column: 1 / -1;
+    max-width: 1300px;
+    margin: 24px auto;
+    padding: 20px;
+
+    .col2-set {
+        border-left: 1px solid #eee;
+        @include respond-to('small') {
+            border: none;
+        }
+    }
+
+    .order-total {
+        display: flex;
+        flex-direction: column;
+        margin-top: 12px;
+        gap: 12px;
+        margin-bottom: 24px;
+    }
+
+    #billing_country_field {
+        width: 90%;
+    }
+    #place_order {
+        padding: 12px;
+        margin-top: 24px;
+        background-color: #add136;
+        box-shadow: 0px 16px 40px -12px rgba(173, 209, 54, 0.35);
+        border: none;
+    }
+
+    .col-1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .woocommerce-billing-fields__field-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin-top: 24px;
+
+        @include respond-to('small') {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .form-row {
+        display: flex;
+        flex-direction: column;
+
+        .input-text {
+            width: 90%;
+            padding: 4px;
+            border: 1px solid #ddd;
+            margin-top: 12px;
+            margin-bottom: 12px;
+        }
+    }
+}
+.checkout_coupon.woocommerce-form-coupon {
+    button {
+        padding: 8px 16px;
+        background-color: #add136;
+        border: none;
+    }
+    .blockUI.blockOverlay:before {
+        transform: translateX(30%);
+    }
+}
+
+.woocommerce-checkout {
+    .woocommerce-info {
+        text-align: center;
+        margin-top: 24px;
+    }
+
+    .entry-header {
+        display: none;
+    }
+}
+
+.checkout.woocommerce-checkout {
+    @include respond-to('small') {
+        grid-template-columns: 1fr;
+        padding: 0 4px;
+    }
+}
+
+.entry-footer {
+    display: none;
+}
+
+abbr[title] {
+    text-decoration: none;
+}

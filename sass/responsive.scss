@@ -1,0 +1,28 @@
+$breakpoint-small: 590px;
+$breakpoint-medium: 768px;
+$breakpoint-large: 1050px;
+$breakpoint-extra-large: 1324px;
+
+@mixin respond-to($breakpoint) {
+	@if $breakpoint == "small" {
+		@media (max-width: $breakpoint-small) {
+			@content;
+		}
+	} @else if $breakpoint == "medium" {
+		@media (max-width: $breakpoint-medium) {
+			@content;
+		}
+	} @else if $breakpoint == "large" {
+		@media (max-width: $breakpoint-large) {
+			@content;
+		}
+	} @else if $breakpoint == "extra-large" {
+		@media (max-width: $breakpoint-extra-large) {
+			@content;
+		}
+	}
+}
+
+.hide {
+	display: none;
+}

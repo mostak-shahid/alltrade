@@ -1,0 +1,31 @@
+{
+    "name": "alltrade",
+    "version": "1.0.0",
+    "description": "[![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "compile": "node-sass sass/ -o ./ --source-map true --output-style expanded --indent-type tab --indent-width 1 && rtlcss style.css style-rtl.css && npm run watcher",
+        "watch": "nodemon -e scss -x npm run compile",
+        "watcher": "npx node-sass components/ -o components/ -w",
+        "start": "browser-sync start --proxy 'localhost/alltrade' --files 'templates/*.html,*.php,*.css,*/.php,build/*.js,build/*.css' --no-notify --reload-delay 2000",
+        "browser": "browser-sync start proxy --http://localhost/alltrade --files 'templates/.html, *.php, *.css, */.php, build/.js, build/*.css'"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@glidejs/glide": "^3.6.0",
+        "@wordpress/prettier-config": "^2.15.0",
+        "browser-sync": "^3.0.2",
+        "node-sass": "^8.0.0",
+        "rtlcss": "^4.1.0",
+        "sass": "^1.62.1"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.22",
+        "npm-run-all": "^4.1.5",
+        "onchange": "^7.1.0"
+    }
+}

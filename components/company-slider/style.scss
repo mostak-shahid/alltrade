@@ -1,0 +1,92 @@
+@import '../../sass/responsive.scss';
+
+.company-category-slider {
+    position: relative;
+    margin: 70px;
+    z-index: 50;
+    .swiper-slide {
+        .company-category-slider__slider-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .company-category-slider__image-container {
+                width: fit-content;
+                height: fit-content;
+                border: 1px solid #d2d4da;
+                overflow: hidden;
+                border-radius: 8px;
+            }
+
+            p {
+                font-size: 18px;
+                color: black;
+                margin-top: 8px;
+                @include respond-to('small') {
+                    font-size: 14px;
+                }
+            }
+
+            img {
+                height: 60px;
+                width: 60px;
+                object-fit: contain;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 14px 60px;
+                transition: all 0.3s;
+                &:hover {
+                    transform: scale(1.05);
+                }
+
+                @include respond-to('small') {
+                    height: 32px;
+                    width: 32px;
+                    padding: 14px 14px;
+                }
+            }
+        }
+    }
+
+    .btn-next-company {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -25px;
+        width: fit-content;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        z-index: 50;
+    }
+    .btn-prev-company {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -25px;
+        width: fit-content;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        z-index: 50;
+    }
+}
+
+.products-container {
+    .company-category-slider {
+        position: relative;
+        margin: 70px 0;
+        z-index: 50;
+    }
+}
+
+.swiper-category-companies {
+    display: none;
+}
+
+.active__slider {
+    display: block;
+}

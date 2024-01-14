@@ -1,0 +1,68 @@
+@import '../../sass/responsive.scss';
+
+.ya-floating-discount {
+    position: absolute;
+    height: fit-content;
+    z-index: 100;
+    font-size: 16px;
+    top: 800px;
+    right: 80px;
+
+    img {
+        transition: all 0.3s;
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    .ya__discount-img-mobile {
+        display: none;
+    }
+
+    @include respond-to('small') {
+        right: 0;
+        top: auto;
+        bottom: -59px;
+        position: fixed;
+        .ya__discount-image-desk {
+            display: none;
+        }
+        .ya__discount-img-mobile {
+            display: block;
+        }
+    }
+}
+
+.ya-floating-discount-exit {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 0;
+    height: 24px;
+    width: 24px;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    background-color: #d2d4da;
+    border-radius: 4px;
+    cursor: pointer;
+
+    @include respond-to('small') {
+        top: 30px;
+        right: 5px;
+    }
+}
+
+.ya-floating-discount-exit::after {
+    content: '\f00d';
+    font-family: 'Font Awesome\ 5 Free';
+    font-weight: 900;
+}
+
+.floating-discount-sidebar {
+    position: relative;
+}
+
+.ya-floating-discount__removed {
+    display: none;
+}

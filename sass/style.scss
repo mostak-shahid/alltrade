@@ -1,0 +1,117 @@
+/*!
+Theme Name: npcoding
+Theme URI: http://underscores.me/
+Author: npcoding
+Author URI: http://npcoding.com
+Description: Description
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: alltrade
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+npcoding is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700;800&display=swap');
+
+@import './responsive.scss';
+
+@import 'dynamic/mixins';
+@import 'dynamic/variabels';
+
+/* Normalize
+--------------------------------------------- */
+@import 'generic/normalize';
+
+/* Box sizing
+--------------------------------------------- */
+@import 'generic/box-sizing';
+
+/*--------------------------------------------------------------
+# Layouts
+--------------------------------------------------------------*/
+// @import "layouts/content-sidebar"; // Uncomment this line for a sidebar on right side of your content.
+// @import "layouts/sidebar-content"; // Uncomment this line for a sidebar on left side of your content.
+
+@import 'layouts/_header';
+@import 'layouts/menu';
+@import 'layouts/footer';
+@import 'layouts/sidebar-content';
+@import 'layouts/filter';
+@import 'layouts/forms';
+
+@import 'plugins/jetpack/infinite-scroll';
+
+@import 'elements/buttons';
+@import 'elements/hr';
+@import 'elements/icons';
+@import 'elements/text';
+@import 'elements/skeleton';
+@import 'elements/ajax-search-plugin';
+
+@import 'layouts/footer';
+@import 'layouts/header';
+@import 'layouts/menu';
+
+@import 'generic/slider';
+
+@import 'pages/home';
+@import 'pages/about';
+@import 'pages/call-service-success';
+@import 'pages/contact';
+@import 'pages/profile';
+@import 'pages/login';
+@import 'pages/thank_you';
+@import 'pages/custom-reviews';
+@import 'pages/404';
+@import 'pages/stock-modal';
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Assistant';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.woocommerce .blockUI.blockOverlay:before,
+.woocommerce .loader:before {
+    height: 3em;
+    width: 3em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -0.5em;
+    margin-top: -0.5em;
+    display: block;
+    content: '';
+    -webkit-animation: none;
+    -moz-animation: none;
+    animation: none;
+    background: url('/wp-content/themes/alltrade/sass/spinner-1s-200px.gif') center center;
+    background-size: cover;
+    line-height: 1;
+    text-align: center;
+    font-size: 2em;
+}
+
+button {
+    cursor: pointer;
+}

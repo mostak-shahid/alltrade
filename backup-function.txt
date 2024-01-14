@@ -1,0 +1,34 @@
+	<div class="technical-container__wrapper">
+		<div class="technical-container">
+			<div class="technical-container__table-header">
+				<h2>סוג מוצר</h2>
+			</div>
+			<div class="technical-container__table">
+				<?php
+				$meta_fields = $product->get_meta_data();
+				$index = 0;
+
+				foreach ($meta_fields as $key => $value) {
+
+					if (empty($value->get_data()['value'])) return;
+
+					$my_data = $value->get_data();
+
+					$col_class = '';
+					if ($key === 0) $col_class = 'technical-container__right-col';
+					if ($key === 4) $col_class = 'technical-container__left-col';
+
+
+				?>
+					<?php echo $key === 0 || $key === 4 ? "<div class=$col_class>" : null ?>
+					<div class="technical-container__data">
+						<p class="technical-container___data-property"><?php echo $value->get_data()['key'] ?></p>
+						<p class="technical-container___data-value"><?php echo $value->get_data()['value'] ?></p>
+					</div>
+					<?php echo $key === 0 || $key === 4 ? '</div>' : null ?>
+				<?php
+				}
+				?>
+			</div>
+		</div>
+	</div>

@@ -1,0 +1,51 @@
+.btn {
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.btn-header {
+	background-color: $color__main-color;
+	padding: 8px 16px;
+	z-index: 50;
+}
+
+.btn-footer {
+	background-color: $color__main-color;
+	padding: 8px 16px;
+}
+
+.btn-header:hover {
+	border: none;
+	border-radius: 4px;
+	background-color: $color__dark-grey;
+}
+
+.btn-arrow {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+}
+
+.btn-black {
+	background-color: #101223;
+	padding: 8px 16px;
+	color: white;
+}
+
+.btn-green {
+	background-color: $color__main-color;
+	padding: 8px 16px;
+}
+
+.btn-big {
+	padding: 16px 32px;
+}
+
+.wpcf7-submit.submit-button {
+	font-family: "Assistant";
+	color: black;
+	font-weight: 600;
+}

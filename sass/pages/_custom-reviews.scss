@@ -1,0 +1,50 @@
+.product-review-form {
+    width: 500px;
+    margin: 40px auto;
+
+    @include respond-to('small') {
+        width: 300px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h2 {
+        margin-bottom: 8px;
+    }
+    p {
+        margin-bottom: 12px;
+    }
+
+    label {
+        margin-bottom: 6px;
+        font-weight: 600;
+    }
+
+    input,
+    textarea,
+    select {
+        border: 1px solid #ddd;
+        padding: 4px;
+        border-radius: 4px;
+        margin-bottom: 12px;
+    }
+
+    .ya__review-btn-submit {
+        background-color: #add136;
+        cursor: pointer;
+    }
+
+    .ya-review__prodcut-image-text {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+
+        img {
+            width: 105px;
+            height: auto;
+        }
+    }
+}

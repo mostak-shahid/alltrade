@@ -1,0 +1,76 @@
+.page-id-9 {
+	h2 {
+		text-align: center;
+		margin: 14px 0px;
+		@include respond-to ('small'){
+			margin: 16px 0;
+		}
+	}
+	.woocommerce-form.woocommerce-form-login.login {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 60%;
+
+		@include respond-to("small") {
+			width: 100%;
+		}
+		margin: 0 auto;
+		p {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			margin: 20px 0px 0px 0px;
+			
+
+			input {
+				border: 1px solid #ddd;
+				border-radius: 4px;
+				margin-top: 4px;
+				width: 100%;
+				margin: 8px auto;
+				padding: 8px;
+			}
+			label {
+			}
+			
+			
+		}
+	}
+	.woocommerce-form__input.woocommerce-form__input-checkbox {
+		width: fit-content;
+	}
+	.woocommerce-form__label.woocommerce-form__label-for-checkbox.woocommerce-form-login__rememberme {
+		display: flex;
+		gap: 8px;
+		align-items: center;
+		margin: 4px auto;
+		input {
+			width: fit-content !important;
+			margin-bottom: 16px;
+		}
+	}
+	.woocommerce-button.button.woocommerce-form-login__submit.wp-element-button {
+		background-color: #add136;
+		transition: all 0.3s;
+		border: none;
+		padding: 8px 16px;
+	}
+	.woocommerce-button.button.woocommerce-form-login__submit.wp-element-button:hover {
+		background-color: #96b72a;
+	}
+	.button {
+		background-color: #add136;
+		color: #ffff;
+		padding: 8px 0px;
+		border: none;
+		border-radius: 4px;
+		&:hover{
+			background-color: #96b72a;
+		}
+		@include respond-to ('small'){
+			padding: 4px 0px;
+		}
+	}
+}

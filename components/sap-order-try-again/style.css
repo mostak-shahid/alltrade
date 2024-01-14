@@ -1,0 +1,84 @@
+.ya__btn-sap-order-try-again {
+    width: fit-content;
+    background-color: #a3f8af;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.2s;
+    position: relative;
+}
+
+.ya__btn-sap-order-try-again__loading {
+    background-image: url('/wp-admin/images/spinner-2x.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #eee;
+    color: transparent;
+}
+
+.ya__order_data_column h4 {
+    font-size: 18px;
+    padding: 12px 0;
+    margin: 0;
+    border-top: 1px solid #eee;
+}
+
+.ya__order_data_column .ya__order_data_column__container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.ya__order_data_column .ya__order_data_column__container-col {
+    display: flex;
+    gap: 4px;
+}
+
+.ya__loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+}
+
+.ya__order_data_column table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+.ya__order_data_column table th,
+.ya__order_data_column table td {
+    border: 1px solid #ccc;
+    padding: 12px !important;
+}
+
+.ya__order_data_column table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-align: left;
+}
+
+.sap-order-faild {
+    background-color: #fea1a1;
+}
+
+.sap-order-success {
+    background-color: #a0d8b3;
+}
+
+.sap-order-faild,
+.sap-order-success,
+.sap-order-none {
+    border-radius: 4px;
+    padding: 6px 12px;
+    width: fit-content;
+}
+
+.sap-order-none {
+    background-color: #eee;
+}

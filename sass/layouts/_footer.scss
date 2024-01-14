@@ -1,0 +1,233 @@
+.site-footer {
+    width: 100%;
+    padding: 40px 188px;
+    background-color: $color__black;
+
+    h3 {
+        font-weight: 600;
+    }
+
+    @include respond-to('extra-large') {
+        padding: 40px 100x;
+    }
+
+    @include respond-to('large') {
+        padding: 40px 80px;
+    }
+
+    @include respond-to('medium') {
+        padding: 40px 60px;
+    }
+
+    @include respond-to('small') {
+        padding: 40px 32px;
+    }
+}
+
+.newsletter-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include respond-to('medium') {
+        flex-direction: column;
+        width: 100%;
+        gap: 220px;
+        align-items: flex-start;
+    }
+
+    @include respond-to('small') {
+        flex-direction: column;
+        width: 100%;
+        align-items: stretch;
+    }
+}
+
+.newsletter-text {
+    display: flex;
+    align-items: flex-end;
+    gap: 24px;
+    width: 60%;
+
+    @include respond-to('medium') {
+        align-items: center;
+        width: 100%;
+        gap: 40px;
+    }
+}
+
+.newsletter-text img {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 6px;
+    @include respond-to('small') {
+        display: none;
+    }
+}
+
+.inline-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.inline-text h3 {
+    line-height: 32px;
+    color: #f3f4f8;
+}
+
+.newsletter-form-container {
+    width: 40%;
+
+    @include respond-to('medium') {
+        width: 100%;
+    }
+}
+
+.newsletter-form-container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 12px;
+    flex: 1;
+
+    @include respond-to('medium') {
+        flex-direction: column;
+        width: 100%;
+        gap: 0px;
+    }
+}
+
+.newsletter-form-container input {
+    width: 100%;
+    border-radius: 4px;
+    border: none;
+    border-bottom: 2px solid $color__main-color;
+    padding: 6px 16px;
+
+    @include respond-to('small') {
+        flex: 1;
+    }
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+    @include respond-to('small') {
+        width: 100%;
+    }
+}
+
+.newsletter-checkbox {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.newsletter-checkbox input {
+    width: fit-content;
+}
+
+.footer-navigation-container {
+    display: flex;
+    color: $color_super_grey_light;
+
+    @include respond-to('small') {
+        flex-direction: column;
+    }
+}
+
+.footer-menu-items {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-menu-items-container {
+    display: flex;
+    gap: 12px;
+    gap: 64px;
+    margin-bottom: 64px;
+    width: 60%;
+    @include respond-to('small') {
+        flex-direction: column;
+    }
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    color: $color__grey_light;
+}
+
+.rights-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include respond-to('medium') {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    @include respond-to('small') {
+    }
+}
+
+.footer-icons {
+    display: flex;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.footer-icon-container {
+    background-color: $color_super_grey_light;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.footer-icon-container:hover {
+    background-color: $color__grey_light;
+}
+
+.footer-icon-container rect {
+    background-color: transparent;
+    fill: transparent;
+}
+
+.footer-icons-container {
+    width: 40%;
+    @include respond-to('small') {
+        width: 100%;
+    }
+}
+
+.company-logo-container {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    gap: 20px;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    .company-logo-container img {
+        max-width: 50px;
+    }
+    @include respond-to('medium') {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    @include respond-to('small') {
+        gap: 0px;
+        row-gap: 18px;
+    }
+}

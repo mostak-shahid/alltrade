@@ -1,0 +1,151 @@
+.page-id-8 {
+    background-color: #fff;
+    .entry-content {
+        padding: 48px 80px;
+        @include respond-to('medium') {
+            padding: 48px 20px;
+        }
+    }
+
+    .woocommerce-order {
+        border: 1px solid #ddd;
+        border-radius: 4px;
+
+        padding: 24px 80px;
+        @include respond-to('medium') {
+            padding: 24px 10px;
+        }
+    }
+
+    .woocommerce-thankyou-order-received {
+        margin-bottom: 80px;
+        font-size: 32px;
+        font-weight: 600;
+        text-align: center;
+        @include respond-to('medium') {
+            font-size: 24px;
+        }
+    }
+
+    .woocommerce-order-overview.woocommerce-thankyou-order-details.order_details {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 48px;
+        gap: 8px;
+    }
+
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+        direction: ltr;
+        border: 1px solid #ddd;
+
+        @include respond-to('medium') {
+            width: 100%;
+        }
+
+        th {
+            border-right: 1px solid #ddd;
+        }
+        tfoot {
+            tr {
+                border-bottom: 1px solid #ddd;
+            }
+        }
+    }
+
+    // Define table header styles
+    .table thead th {
+        font-weight: bold;
+        padding: 10px;
+        background-color: #f5f5f5;
+        border-bottom: 2px solid #ddd;
+        text-align: left;
+    }
+
+    // Define table body row styles
+    .table tbody tr {
+        border-bottom: 1px solid #ddd;
+    }
+
+    // Define table cell styles
+    .table td {
+        padding: 10px;
+        text-align: left;
+    }
+
+    // Define table footer styles
+    .table tfoot th {
+        font-weight: bold;
+        padding: 10px;
+        text-align: left;
+    }
+
+    // Define link styles
+    .table a {
+        color: #34b3e6;
+        text-decoration: none;
+
+        @include respond-to('medium') {
+            font-size: 14px;
+        }
+    }
+
+    // Define quantity styles
+    .table .product-quantity {
+        font-weight: bold;
+    }
+
+    // Define currency symbol styles
+    .table .woocommerce-Price-currencySymbol {
+        font-weight: bold;
+    }
+
+    // Apply styles to the given table class
+    .woocommerce-table--order-details {
+        @extend .table;
+    }
+
+    // Apply styles to the product name cells
+    .woocommerce-table__product-name {
+        width: 70%;
+    }
+
+    // Apply styles to the product total cells
+    .woocommerce-table__product-total {
+        display: flex;
+    }
+
+    // Apply styles to the table header product name cell
+    .woocommerce-table__product-name.product-name {
+        text-align: left;
+        width: 50%;
+        border-right: 1px solid #ddd;
+    }
+
+    // Apply styles to the table header product total cell
+    .woocommerce-table__product-total.product-total {
+        text-align: left;
+    }
+    .woocommerce-order-details__title {
+        margin-bottom: 16px;
+    }
+
+    .woocommerce-column__title {
+        margin-bottom: 16px;
+    }
+
+    .ya__thank-you-page__check {
+        width: 80px;
+        height: auto;
+        margin-bottom: 16px;
+        text-align: center;
+        margin: 12px auto;
+        display: flex;
+
+        @include respond-to('small') {
+            width: 60px;
+        }
+    }
+}

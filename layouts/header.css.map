@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "header.css",
+	"sources": [
+		"../sass/layouts/header.scss"
+	],
+	"names": [],
+	"mappings": "AAAA,AAAA,YAAY,CAAC;CACX,KAAK,EAAE,IAAI;CACX,MAAM,EAAE,IAAI;CACZ,gBAAgB,EAAE,GAAG;CACtB"
+}
